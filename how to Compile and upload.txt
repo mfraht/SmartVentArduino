@@ -1,0 +1,13 @@
+Don't forget to change the port
+
+To Build the HEX file:
+---------------------
+"C:\Program Files (x86)\Arduino\arduino_debug.exe" --pref build.path=./build --verify --board arduino:avr:pro:cpu=8MHzatmega328 --port COM5 --preserve-temp-files -v  energyarduino.ino
+
+
+To Build and upload together:
+----------------------------
+"C:\Program Files (x86)\Arduino\arduino_debug.exe" --pref build.path=./build --upload--board arduino:avr:pro:cpu=8MHzatmega328 --port COM5 --preserve-temp-files -v  energyarduino.ino
+
+
+C:\Users\Mostafa\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino9/bin/avrdude -CC:\Users\Mostafa\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino9/etc/avrdude.conf -v -patmega328p -carduino -PCOM9 -b57600 -D -Uflash:w:./build/energyarduino.ino.hex:i
